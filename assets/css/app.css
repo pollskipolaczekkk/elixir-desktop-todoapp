@@ -37,3 +37,7 @@
 body {
     font-family: Kanit;
 }
+
+.ta-gradient {
+    background-image: linear-gradient(to bottom, #631A61, #551653, #340E33, #010101);
+}

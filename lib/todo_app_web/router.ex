@@ -26,6 +26,7 @@ defmodule TodoAppWeb.Router do
     pipe_through :browser
 
     live "/", HomeLive
+    live "/about", AboutLive
   end
 
   # Other scopes may use custom stacks.

@@ -3,9 +3,13 @@ defmodule TodoAppWeb.HomeLive do
 
   def render(assigns) do
     ~H"""
-    <h1 class="mt-20 text-center text-taDark-light text-4xl font-bold">
-      Hello from Home Page !!
-    </h1>
+    <div class="bg-taLavender rounded-lg w-full h-96 mx-auto"></div>
     """
+  end
+
+  def handle_params(_params, uri, socket) do
+    %{path: path} = URI.parse(uri)
+
+    {:noreply, socket |> assign(:path, path)}
   end
 end
