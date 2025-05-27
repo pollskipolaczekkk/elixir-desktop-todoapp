@@ -25,12 +25,13 @@
   </nav>
 </header>
 
+<.flash_group flash={@flash} />
+
 <main
   class="px-14 py-8 lg:px-8 lg:py-20 transition-all duration-[1000ms] opacity-0 -translate-x-16"
   phx-mounted={JS.remove_class("opacity-0 -translate-x-16")}
 >
   <div class="mx-auto max-w-2xl">
-    <.flash_group flash={@flash} />
     {@inner_content}
   </div>
 </main>

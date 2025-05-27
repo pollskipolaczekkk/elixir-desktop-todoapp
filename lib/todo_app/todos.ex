@@ -18,7 +18,9 @@ defmodule TodoApp.Todos do
 
   """
   def list_todos do
-    Repo.all(Todo)
+    Todo
+    |> order_by(desc: :updated_at)
+    |> Repo.all()
   end
 
   @doc """
@@ -85,8 +87,13 @@ defmodule TodoApp.Todos do
       {:error, %Ecto.Changeset{}}
 
   """
-  def delete_todo(%Todo{} = todo) do
-    Repo.delete(todo)
+  def delete_todo(todo_id) do
+    todo = Repo.get(Todo, todo_id)
+
+    case todo do
+      nil -> {:error, :not_found}
+      _ -> Repo.delete(todo)
+    end
   end
 
   @doc """

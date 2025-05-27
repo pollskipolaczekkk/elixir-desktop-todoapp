@@ -10,11 +10,15 @@ defmodule TodoApp.Todos.Todo do
     timestamps(type: :utc_datetime)
   end
 
+  @min_chars 3
+  @max_chars 40
+
   @doc false
   def changeset(todo, attrs) do
     todo
     |> cast(attrs, [:title, :description, :done])
     |> validate_required([:title, :description, :done])
+    |> validate_length(:title, min: @min_chars, max: @max_chars)
   end
 end
 
