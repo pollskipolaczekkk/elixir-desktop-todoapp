@@ -22,17 +22,17 @@ defmodule TodoAppWeb.HomeLive do
         <.input
           field={@form[:title]}
           label="Title"
-          class="bg-zinc-900 text-white rounded-md w-full focus:border focus:border-taLavender focus:outline-none focus:ring-0"
+          class="bg-zinc-900 text-xs text-white font-extralight rounded-md w-full focus:border focus:border-taLavender focus:outline-none focus:ring-0"
         />
         <.input
           field={@form[:description]}
           type="textarea"
           label="Description"
-          class="resize-none bg-zinc-900 text-white rounded-md w-full focus:border focus:border-taLavender focus:outline-none focus:ring-0 -mb-1.5"
+          class="resize-none bg-zinc-900 text-xs text-white font-extralight rounded-md w-full focus:border focus:border-taLavender focus:outline-none focus:ring-0 -mb-1.5"
         />
         <:actions>
           <div class="flex justify-end w-full">
-            <.button class="!bg-taPurple border border-white hover:!bg-taPurple-dark hover:!text-taDark-light hover:!border-taDark-light flex gap-2 items-center">
+            <.button class="!bg-taPurple border border-white hover:!bg-taPurple-dark hover:!text-taDark-light hover:!border-taDark-light flex gap-2 items-center !px-2 !py-1">
               <img src="/images/save_icon.svg" class="w-[22px]" alt="Save Icon" /> Save
             </.button>
           </div>

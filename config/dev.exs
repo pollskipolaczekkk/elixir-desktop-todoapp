@@ -16,7 +16,12 @@ config :todo_app, TodoApp.Repo,
 config :todo_app, TodoAppWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  # http: [ip: {127, 0, 0, 1}, port: 4000],
+  # Step 1: set the port number to 0, so the port can be chosen automatically.
+  http: [ip: {127, 0, 0, 1}, port: 0],
+
+  # Step 2: start endpoint automatically, so we have no need to start it manually.
+  server: true,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,

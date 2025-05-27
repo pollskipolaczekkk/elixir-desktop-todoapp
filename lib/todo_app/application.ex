@@ -11,14 +11,22 @@ defmodule TodoApp.Application do
       TodoAppWeb.Telemetry,
       TodoApp.Repo,
       {Ecto.Migrator,
-        repos: Application.fetch_env!(:todo_app, :ecto_repos),
-        skip: skip_migrations?()},
+       repos: Application.fetch_env!(:todo_app, :ecto_repos), skip: skip_migrations?()},
       {DNSCluster, query: Application.get_env(:todo_app, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: TodoApp.PubSub},
       # Start a worker by calling: TodoApp.Worker.start_link(arg)
       # {TodoApp.Worker, arg},
       # Start to serve requests, typically the last entry
-      TodoAppWeb.Endpoint
+      TodoAppWeb.Endpoint,
+      {Desktop.Window,
+       [
+         app: :todo_app,
+         id: TodoAppWindow,
+         title: "TodoApp",
+         size: {575, 675},
+         icon: "static/images/icon.png",
+         url: &TodoAppWeb.Endpoint.url/0
+       ]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
@@ -40,3 +48,5 @@ defmodule TodoApp.Application do
     System.get_env("RELEASE_NAME") != nil
   end
 end
+
+# export WEBKIT_DISABLE_COMPOSITING_MODE=1
