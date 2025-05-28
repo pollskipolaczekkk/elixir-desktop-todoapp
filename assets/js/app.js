@@ -35,6 +35,34 @@ Hooks.SetTitle = {
   }
 }
 
+Hooks.DetectKeyboardEvents = {
+  mounted() {
+    let keyPressed = {};
+    const input = document.getElementById("title-input");
+    input.focus();
+
+    this.el.addEventListener("keydown", (e) => {
+      // https://stackoverflow.com/questions/20962033/how-can-i-catch-2-key-presses-at-once
+      keyPressed[e.key] = true;
+      if (keyPressed["Control"] && keyPressed["Shift"] && keyPressed["Q"]) {
+        keyPressed = {};
+
+        this.pushEvent("quit", {})
+      }
+      if (keyPressed["Control"] && keyPressed["Shift"] && keyPressed["B"]) {
+        keyPressed = {};
+
+        this.pushEvent("browser", {})
+      }
+      if (keyPressed["Control"] && keyPressed["Shift"] && keyPressed["O"]) {
+        keyPressed = {};
+
+        this.pushEvent("observer", {})
+      }
+    })
+  }
+}
+
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,

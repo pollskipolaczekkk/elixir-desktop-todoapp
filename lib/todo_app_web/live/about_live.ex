@@ -1,6 +1,7 @@
 defmodule TodoAppWeb.AboutLive do
   use TodoAppWeb, :live_view
 
+  @impl true
   def render(assigns) do
     ~H"""
     <h3 class="text-center text-taPurple-light text-xl lg:text-2xl font-normal lg:font-semibold">
@@ -13,6 +14,7 @@ defmodule TodoAppWeb.AboutLive do
     """
   end
 
+  @impl true
   def handle_params(_params, uri, socket) do
     %{path: path} = URI.parse(uri)
 

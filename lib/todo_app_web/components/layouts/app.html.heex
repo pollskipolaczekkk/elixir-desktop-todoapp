@@ -1,4 +1,6 @@
-<header class="ta-gradient pt-4 lg:pt-12 h-32 lg:h-48">
+<header class="ta-gradient pt-4 lg:pt-12 h-32 lg:h-48 relative">
+  <.live_component :if={@path == "/"} module={TodoAppWeb.ControllersComponent} id="controllers" />
+
   <h1 class="text-center text-taLavender-dark text-2xl lg:text-4xl font-bold">
     TodoApp
   </h1>

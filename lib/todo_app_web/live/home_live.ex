@@ -3,11 +3,16 @@ defmodule TodoAppWeb.HomeLive do
 
   alias TodoApp.{Todos, Todos.Todo}
   alias TodoAppWeb.TodoItemComponent
+  alias Desktop.{OS, Window}
 
   @impl true
   def render(assigns) do
     ~H"""
-    <div class="bg-slate-800 rounded-lg w-full mx-auto p-4">
+    <div
+      id="keyboard-events"
+      class="bg-slate-800 rounded-lg w-full mx-auto p-4"
+      phx-hook="DetectKeyboardEvents"
+    >
       <.simple_form
         id="todo-form"
         for={@form}
@@ -20,6 +25,7 @@ defmodule TodoAppWeb.HomeLive do
           Oops, something went wrong! Please check the errors below.
         </.error>
         <.input
+          id="title-input"
           field={@form[:title]}
           label="Title"
           class="bg-zinc-900 text-xs text-white font-extralight rounded-md w-full focus:border focus:border-taLavender focus:outline-none focus:ring-0"
@@ -116,6 +122,28 @@ defmodule TodoAppWeb.HomeLive do
     Todos.update_todo(todo, attrs)
 
     {:noreply, push_navigate(socket, to: ~p"/")}
+  end
+
+  @impl true
+  def handle_event("quit", _params, socket) do
+    Window.quit()
+
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("browser", _params, socket) do
+    Window.prepare_url(TodoAppWeb.Endpoint.url())
+    |> OS.launch_default_browser()
+
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("observer", _params, socket) do
+    :observer.start()
+
+    {:noreply, socket}
   end
 
   defp assign_form(socket, %Ecto.Changeset{} = changeset) do
