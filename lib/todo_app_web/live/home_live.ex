@@ -1,7 +1,7 @@
 defmodule TodoAppWeb.HomeLive do
   use TodoAppWeb, :live_view
 
-  alias TodoApp.{Todos, Todos.Todo}
+  alias TodoApp.{Todos, Todos.Todo, Locales}
   alias TodoAppWeb.TodoItemComponent
   alias Desktop.{OS, Window}
 
@@ -27,19 +27,19 @@ defmodule TodoAppWeb.HomeLive do
         <.input
           id="title-input"
           field={@form[:title]}
-          label="Title"
+          label={gettext("Title")}
           class="bg-zinc-900 text-xs text-white font-extralight rounded-md w-full focus:border focus:border-taLavender focus:outline-none focus:ring-0"
         />
         <.input
           field={@form[:description]}
           type="textarea"
-          label="Description"
+          label={gettext("Description")}
           class="resize-none bg-zinc-900 text-xs text-white font-extralight rounded-md w-full focus:border focus:border-taLavender focus:outline-none focus:ring-0 -mb-1.5"
         />
         <:actions>
           <div class="flex justify-end w-full">
             <.button class="!bg-taPurple border border-white hover:!bg-taPurple-dark hover:!text-taDark-light hover:!border-taDark-light flex gap-2 items-center !px-2 !py-1">
-              <img src="/images/save_icon.svg" class="w-[22px]" alt="Save Icon" /> Save
+              <img src="/images/save_icon.svg" class="w-[22px]" alt="Save Icon" /> {gettext("Save")}
             </.button>
           </div>
         </:actions>
@@ -53,6 +53,10 @@ defmodule TodoAppWeb.HomeLive do
           <.live_component module={TodoItemComponent} id={todo.id} todo={todo} />
         </ul>
       </div>
+
+      <p :if={length(@todos) == 0} class="mt-6 text-taLavender font-semibold text-lg text-center">
+        {gettext("Add some to-dos")} 😀
+      </p>
     </div>
     """
   end
@@ -61,6 +65,11 @@ defmodule TodoAppWeb.HomeLive do
   def mount(_params, _session, socket) do
     changeset = Todos.change_todo(%Todo{})
     todos = Todos.list_todos()
+
+    case Locales.list_locales() do
+      [] -> Locales.create_locale(%{"language" => "en"})
+      [locale | _] -> Gettext.put_locale(TodoAppWeb.Gettext, locale.language)
+    end
 
     socket =
       socket
@@ -109,7 +118,13 @@ defmodule TodoAppWeb.HomeLive do
         {:noreply, push_navigate(socket, to: ~p"/")}
 
       {:error, :not_found} ->
-        socket = put_flash(socket, :error, "An error occurred while trying to delete the to-do")
+        socket =
+          put_flash(
+            socket,
+            :error,
+            gettext("An error occurred while trying to delete the to-do")
+          )
+
         {:noreply, push_navigate(socket, to: ~p"/")}
     end
   end
@@ -144,6 +159,26 @@ defmodule TodoAppWeb.HomeLive do
     :observer.start()
 
     {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("spanish", _params, socket) do
+    locale = Locales.get_locale!(1)
+    Locales.update_locale(locale, %{"language" => "es_ES"})
+
+    Gettext.put_locale("es_ES")
+
+    {:noreply, push_navigate(socket, to: ~p"/")}
+  end
+
+  @impl true
+  def handle_event("english", _params, socket) do
+    locale = Locales.get_locale!(1)
+    Locales.update_locale(locale, %{"language" => "en"})
+
+    Gettext.put_locale("en")
+
+    {:noreply, push_navigate(socket, to: ~p"/")}
   end
 
   defp assign_form(socket, %Ecto.Changeset{} = changeset) do

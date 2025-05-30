@@ -1,5 +1,6 @@
 <header class="ta-gradient pt-4 lg:pt-12 h-32 lg:h-48 relative">
   <.live_component :if={@path == "/"} module={TodoAppWeb.ControllersComponent} id="controllers" />
+  <.live_component :if={@path == "/"} module={TodoAppWeb.SelectLanguageComponent} id="languages" />
 
   <h1 class="text-center text-taLavender-dark text-2xl lg:text-4xl font-bold">
     TodoApp
@@ -11,7 +12,7 @@
         @path == "/" && "border-b-4 border-pink-400 pb-3"
       ]}>
         <.link navigate={~p"/"} class="block">
-          Home
+          {gettext("Home")}
         </.link>
       </div>
       <div class={[
@@ -19,7 +20,7 @@
         @path == "/about" && "border-b-4 border-pink-400 pb-3"
       ]}>
         <.link navigate={~p"/about"} class="block">
-          About
+          {gettext("About")}
         </.link>
       </div>
     </div>
@@ -58,7 +59,7 @@
           rel="noopener noreferrer"
           class="hover:underline"
         >
-          More Info
+          {gettext("More Info")}
         </a>
       </div>
     </div>

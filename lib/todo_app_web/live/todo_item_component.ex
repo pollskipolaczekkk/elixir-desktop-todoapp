@@ -29,10 +29,10 @@ defmodule TodoAppWeb.TodoItemComponent do
         </span>
       </div>
       <button
-        title="Delete to-do"
+        title={gettext("Delete to-do")}
         phx-click="delete"
         phx-value-id={@todo.id}
-        data-confirm="Are you sure you want to delete this to-do?"
+        data-confirm={gettext("Are you sure you want to delete this to-do?")}
         class="px-3 py-1 h-full hover:bg-red-500"
       >
         <.icon class="bg-taDark w-4 h-4" name="hero-x-mark" />

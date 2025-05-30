@@ -1,0 +1,138 @@
+## "msgid"s in this file come from POT (.pot) files.
+###
+### Do not add, change, or remove "msgid"s manually here as
+### they're tied to the ones in the corresponding POT file
+### (with the same domain).
+###
+### Use "mix gettext.extract --merge" or "mix gettext.merge"
+### to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/todo_app_web/live/about_live.ex:10
+#, elixir-autogen, elixir-format
+msgid "About this app"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:488
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:160
+#, elixir-autogen, elixir-format
+msgid "Attempting to reconnect"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:151
+#, elixir-autogen, elixir-format
+msgid "Error!"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:172
+#, elixir-autogen, elixir-format
+msgid "Hang in there while we get back on track"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:167
+#, elixir-autogen, elixir-format
+msgid "Something went wrong!"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:150
+#, elixir-autogen, elixir-format
+msgid "Success!"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:155
+#, elixir-autogen, elixir-format
+msgid "We can't find the internet"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:76
+#: lib/todo_app_web/components/core_components.ex:130
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr ""
+
+#: lib/todo_app_web/live/about_live.ex:14
+#, elixir-autogen, elixir-format
+msgid "A simple to-do manager so you don't forget your chores"
+msgstr ""
+
+#: lib/todo_app_web/components/layouts/app.html.heex:62
+#, elixir-autogen, elixir-format
+msgid "More Info"
+msgstr ""
+
+#: lib/todo_app_web/components/layouts/app.html.heex:23
+#, elixir-autogen, elixir-format
+msgid "About"
+msgstr ""
+
+#: lib/todo_app_web/live/controllers_component.ex:20
+#, elixir-autogen, elixir-format
+msgid "Browser"
+msgstr ""
+
+#: lib/todo_app_web/live/todo_item_component.ex:32
+#, elixir-autogen, elixir-format
+msgid "Delete to-do"
+msgstr ""
+
+#: lib/todo_app_web/live/select_language_component.ex:24
+#, elixir-autogen, elixir-format
+msgid "English"
+msgstr ""
+
+#: lib/todo_app_web/components/layouts/app.html.heex:15
+#, elixir-autogen, elixir-format
+msgid "Home"
+msgstr ""
+
+#: lib/todo_app_web/live/controllers_component.ex:27
+#, elixir-autogen, elixir-format
+msgid "Observer"
+msgstr ""
+
+#: lib/todo_app_web/live/controllers_component.ex:13
+#, elixir-autogen, elixir-format
+msgid "Quit"
+msgstr ""
+
+#: lib/todo_app_web/live/home_live.ex:42
+#, elixir-autogen, elixir-format
+msgid "Save"
+msgstr ""
+
+#: lib/todo_app_web/live/select_language_component.ex:15
+#, elixir-autogen, elixir-format
+msgid "Spanish"
+msgstr ""
+
+#: lib/todo_app_web/live/home_live.ex:36
+#, elixir-autogen, elixir-format
+msgid "Description"
+msgstr ""
+
+#: lib/todo_app_web/live/home_live.ex:30
+#, elixir-autogen, elixir-format
+msgid "Title"
+msgstr ""
+
+#: lib/todo_app_web/live/home_live.ex:127
+#, elixir-autogen, elixir-format
+msgid "An error occurred while trying to delete the to-do"
+msgstr ""
+
+#: lib/todo_app_web/live/todo_item_component.ex:35
+#, elixir-autogen, elixir-format
+msgid "Are you sure you want to delete this to-do?"
+msgstr ""
+
+#: lib/todo_app_web/live/home_live.ex:58
+#, elixir-autogen, elixir-format
+msgid "Add some to-dos"
+msgstr ""

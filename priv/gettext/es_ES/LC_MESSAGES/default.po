@@ -1,0 +1,125 @@
+#: lib/todo_app_web/live/about_live.ex:10
+#, elixir-autogen, elixir-format
+msgid "About this app"
+msgstr "Acerca de esta aplicación"
+
+#: lib/todo_app_web/components/core_components.ex:488
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr ""
+
+#: lib/todo_app_web/components/core_components.ex:160
+#, elixir-autogen, elixir-format
+msgid "Attempting to reconnect"
+msgstr "Intentando reconectarse"
+
+#: lib/todo_app_web/components/core_components.ex:151
+#, elixir-autogen, elixir-format
+msgid "Error!"
+msgstr "¡Error!"
+
+#: lib/todo_app_web/components/core_components.ex:172
+#, elixir-autogen, elixir-format
+msgid "Hang in there while we get back on track"
+msgstr "Aguanta mientras volvemos al buen camino"
+
+#: lib/todo_app_web/components/core_components.ex:167
+#, elixir-autogen, elixir-format
+msgid "Something went wrong!"
+msgstr "¡Algo salió mal!"
+
+#: lib/todo_app_web/components/core_components.ex:150
+#, elixir-autogen, elixir-format
+msgid "Success!"
+msgstr "¡Éxito!"
+
+#: lib/todo_app_web/components/core_components.ex:155
+#, elixir-autogen, elixir-format
+msgid "We can't find the internet"
+msgstr "No se ha podido conectar a internet"
+
+#: lib/todo_app_web/components/core_components.ex:76
+#: lib/todo_app_web/components/core_components.ex:130
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr "cerrar"
+
+#: lib/todo_app_web/live/about_live.ex:14
+#, elixir-autogen, elixir-format
+msgid "A simple to-do manager so you don't forget your chores"
+msgstr "Un sencillo gestor de tareas para que no olvides tus quehaceres"
+
+#: lib/todo_app_web/components/layouts/app.html.heex:62
+#, elixir-autogen, elixir-format
+msgid "More Info"
+msgstr "Más Información"
+
+#: lib/todo_app_web/components/layouts/app.html.heex:23
+#, elixir-autogen, elixir-format
+msgid "About"
+msgstr "Acerca de"
+
+#: lib/todo_app_web/live/controllers_component.ex:20
+#, elixir-autogen, elixir-format
+msgid "Browser"
+msgstr "Navegador"
+
+#: lib/todo_app_web/live/todo_item_component.ex:32
+#, elixir-autogen, elixir-format
+msgid "Delete to-do"
+msgstr "Eliminar to-do"
+
+#: lib/todo_app_web/live/select_language_component.ex:24
+#, elixir-autogen, elixir-format
+msgid "English"
+msgstr "Inglés"
+
+#: lib/todo_app_web/components/layouts/app.html.heex:15
+#, elixir-autogen, elixir-format
+msgid "Home"
+msgstr "Inicio"
+
+#: lib/todo_app_web/live/controllers_component.ex:27
+#, elixir-autogen, elixir-format
+msgid "Observer"
+msgstr "Observer"
+
+#: lib/todo_app_web/live/controllers_component.ex:13
+#, elixir-autogen, elixir-format
+msgid "Quit"
+msgstr "Salir"
+
+#: lib/todo_app_web/live/home_live.ex:42
+#, elixir-autogen, elixir-format
+msgid "Save"
+msgstr "Guardar"
+
+#: lib/todo_app_web/live/select_language_component.ex:15
+#, elixir-autogen, elixir-format
+msgid "Spanish"
+msgstr "Español"
+
+#: lib/todo_app_web/live/home_live.ex:36
+#, elixir-autogen, elixir-format
+msgid "Description"
+msgstr "Descripción"
+
+#: lib/todo_app_web/live/home_live.ex:30
+#, elixir-autogen, elixir-format
+msgid "Title"
+msgstr "Título"
+
+#: lib/todo_app_web/live/home_live.ex:127
+#, elixir-autogen, elixir-format
+msgid "An error occurred while trying to delete the to-do"
+msgstr "Se produjo un error al eliminar el to-do"
+
+#: lib/todo_app_web/live/todo_item_component.ex:35
+#, elixir-autogen, elixir-format
+msgid "Are you sure you want to delete this to-do?"
+msgstr "¿Estás seguro que deseas eliminar esta tarea?"
+
+#: lib/todo_app_web/live/home_live.ex:58
+#, elixir-autogen, elixir-format
+msgid "Add some to-dos"
+msgstr "Añade algunas tareas"
